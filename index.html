@@ -8,17 +8,65 @@
     <link href="webshopstyle.css" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="images/LD_logo.svg" alt="lego-dudes">
+            </a>
+            <figure id="cart">
+                <span class="label">2</span>
+                <img src="images/legocart.svg" alt="handlekurv">
+            </figure>
+        </header>
+        <section id cartview>
+            <h3>din handlevogn</h3>
+            <ul>
+                <li>
+                    <span class="title">Dragon Zane</span>
+                    <span class="price">89 kr</span>
+                    <span class="quantity">x1</span>
+                    <span class="delete">X</span>
+                </li>
+            </ul>
+            <p>Totalt kr. <span id="total">0</span></p>
+        </section>
+        <nav>
+            <a href="city.html"></a>
+            <a class="active" href="ninjago.html"></a>
+            <a href="castle-knights.html"></a>
+            <a href="marine-pirates.html"></a>
+            <a href="movie-characters.html"></a>
+        </nav>
     <main>
         <h2>Ninjago</h2>
         <article class="product-card">
             <img src="images/prod_dragon_zane.webp" alt="produktbilde">
             <a href="ninjago.html">ninjago</a>
-            <h3>dragon zane</h3>
+            <h3>Dragon Zane</h3>
             <span class="price">89 kr</span>
-
+            <button onclick="addToCart('dragon Zane', 89)">Legg i handlekurv</button>
+        </article>
+        <article class="product-card">
+            <img src="images/PROD_lil_ninja.webp" alt="produktbilde">
+            <a href="ninjago.html">ninjago</a>
+            <h3>Lil Ninja</h3>
+            <span class="price">89 kr</span>        
+        </article>
+        <article class="product-card">
+            <img src="images/PROD_master_wu.webp" alt="produktbilde">
+            <a href="ninjago.html">ninjago</a>
+            <h3>Master Wu</h3>
+            <span class="price">89 kr</span>
+        </article>
+        <article class="product-card">
+            <img src="images/PROD_scuba_kai.webp" alt="produktbilde">
+            <a href="ninjago.html">ninjago</a>
+            <h3>Scuba Kai</h3>
+            <span class="price">89 kr</span>
         </article>
     </main>
-    
+ </div>
+   
     <script src="shopscript.js"></script>
 </body>
 </html>
