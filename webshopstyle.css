@@ -144,7 +144,7 @@ article.product-card button {
     font-size: 1rem;
 }
 
-#cart {
+#cartview {
     width: 100%;
     max-width: 500px;
     background-color: var(--black);
