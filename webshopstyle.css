@@ -154,6 +154,8 @@ article.product-card button {
     top: 50px;
     border-left: .5rem solid var(--green);
     border-bottom: .5rem solid var(--green);
+    padding: 1rem;
+    transition: 1s;
 }
 
 #cartview ul {
