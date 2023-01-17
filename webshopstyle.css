@@ -143,3 +143,15 @@ article.product-card button {
     padding: .5rem 1rem;
     font-size: 1rem;
 }
+
+#cart {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--black);
+    color: var(--white);
+    position: absolute;
+    right: 0;
+    top: 50px;
+    border-left: .5rem solid var(--green);
+    border-bottom: .5rem solid var(--green);
+}
