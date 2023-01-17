@@ -186,3 +186,8 @@ button.delete {
     border: none;
     color: var(--white);
 }
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
