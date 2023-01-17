@@ -172,8 +172,11 @@ article.product-card button {
     box-sizing: border-box;
     display: inline-block;
 }
+span.title {
+width: calc(100% - 9rem);
+}
 span.price, span.quantity {
-    width: 2rem;
+    width: 3rem;
 }
 button.delete {
     width: 2rem;
