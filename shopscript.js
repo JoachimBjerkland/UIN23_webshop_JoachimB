@@ -23,3 +23,7 @@ function renderCart() {
     //Bruke en selector for å finne riktig <ul>, og skrive inn listHTML:
     document.querySelector("#cartview ul").innerHTML = listHTML
 }
+
+function toggleCart() {
+    document.querySelector("#cartview").classList.toggle("hidden")
+}
