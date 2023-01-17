@@ -168,3 +168,18 @@ article.product-card button {
     display: block;
     clear: both;
 }
+#cartview ul li * {
+    box-sizing: border-box;
+    display: inline-block;
+}
+span.price, span.quantity {
+    width: 2rem;
+}
+button.delete {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--red);
+    border: none;
+    color: var(--white);
+}
