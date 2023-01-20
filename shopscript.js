@@ -41,8 +41,11 @@ function renderCart() {
 
 function deleteProduct(index) {
     document.getElementById("prod-"+index).classList.add("hidden")
-    cart.splice(index, 1)
-    renderCart()
+    setTimeout(() => {
+        cart.splice(index, 1)
+        renderCart()
+    }, 700)
+
 }
 
 function toggleCart() {

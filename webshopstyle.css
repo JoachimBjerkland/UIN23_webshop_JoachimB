@@ -166,9 +166,10 @@ article.product-card button {
 #cartview ul li {
     border-bottom: 1px solid var(--green);
     padding-bottom: .5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
     display: block;
     clear: both;
+    transition: ease-in-out .7s;
 }
 #cartview ul li * {
     box-sizing: border-box;
