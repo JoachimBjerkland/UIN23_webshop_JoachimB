@@ -27,11 +27,11 @@ function renderCart() {
     //Tom variabel for å bygge HTML til produkter
     let listHTML = ""
     //Gå gjennom cart-arrayen, lag <li> for hvert produkt
-    cart.map(prod => listHTML += `<li>
+    cart.map((prod, index) => listHTML += `<li id"prod-${index}">
     <span class="title">${prod.productTitle}</span>
     <span class="price">${prod.productPrice}</span>
     <span class="quantity">${prod.productQuantity}</span>
-    <span class="delete" onClick="deleteProduct()">X</span>
+    <span class="delete" onClick="deleteProduct(${index})">X</span>
 </li>`)
     //Bruke en selector for å finne riktig <ul>, og skrive inn listHTML:
     document.querySelector("#cartview ul").innerHTML = listHTML
@@ -40,7 +40,9 @@ function renderCart() {
 }
 
 function deleteProduct(index) {
+    document.getElementById("prod-"+index).classList.add("hidden")
     cart.splice(index, 1)
+    renderCart()
 }
 
 function toggleCart() {
